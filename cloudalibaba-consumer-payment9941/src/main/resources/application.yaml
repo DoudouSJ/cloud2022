@@ -1,0 +1,12 @@
+server:
+  port: 9941
+spring:
+  application:
+    name: cloudalibaba-consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+service-url:
+    nacos-payment-service: http://cloudalibaba-provider-payment

@@ -1,0 +1,10 @@
+server:
+  port: 9001
+eureka:
+  client:
+    service-url:
+      defaultZone: http://myeureka7001.com:7001/eureka/,http://myeureka7002.com:7002/eureka/
+    register-with-eureka: false
+feign:
+  circuitbreaker:
+    enabled: true
